@@ -478,3 +478,116 @@ nav .container{
 }
 
 /* End Portifolio */
+
+/* About */
+
+.about{
+    overflow: hidden;
+}
+
+.about img{
+    max-width: 600px;
+}
+
+.about .text{
+    margin-top: 1rem;
+}
+
+.skills{
+    margin: 1.5rem 0 2.5rem 0;
+}
+
+.skill{
+    margin: 1rem 0;
+}
+
+.skill-bar{
+    width: 70%;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #ece6fa;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-progress{
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
+    transition: 1s;
+}
+
+.skill-title{
+    color: #555;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.about .column-1{
+    position: relative;
+}
+
+.about .column-1:before{
+    content: "About";
+    position: absolute;
+    font-weight: 800;
+    font-size: 8rem;
+    color: var(--main-color);
+    opacity: 0.06;
+    top: 20px;
+    left: 0;
+    line-height: 0;
+}
+
+
+/* Fim About */
+
+/* Records */
+
+.records{
+    position: relative;
+    background-color: var(--main-color);
+    padding: 5.2rem 0;
+}
+
+.records .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2rem;
+}
+
+.record-circle{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 4px solid var(--light-one);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--light-one);
+}
+
+.record-circle.active{
+    background-color: var(--light-one);
+    color: var(--dark-one);
+    box-shadow: 0 0 0 15px rgb(255,255,255, 0.5);
+}
+
+.number{
+    font-weight: 400;
+    font-size: 2.35rem;
+}
+
+.record-circle .sub-title{
+    text-transform: uppercase;
+}
+
+/* Fim Records */
